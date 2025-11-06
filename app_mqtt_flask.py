@@ -57,7 +57,10 @@ def on_message(client, userdata, msg):
             "yellow": "#ffff00"
         }
         color = payload.split("=")[1]
+        print(f"Received color command: {color}")
+        print(f"Color exists in dictionary: {color in colors}")
         current_color = colors.get(color, "#ffffff")
+        print(f"Set color to: {current_color}")
         speak(f"Color {color} activated")
     elif payload.startswith("speak="):
         text = payload.split("=", 1)[1]

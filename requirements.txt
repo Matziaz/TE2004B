@@ -1,5 +1,6 @@
 sudo apt update
 sudo apt install mosquitto mosquitto-clients mpg123
-pip install flask gtts paho-mqtt
+pip install flask gtts paho-mqtt speechrecognition pyaudio RPi.GPIO
+# pip install flask gtts paho-mqtt
 sudo systemctl enable mosquitto
 sudo systemctl start mosquitto
